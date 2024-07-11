@@ -18,9 +18,9 @@ fetch(url, options)
 		return response.json();
 	})
 	.then(function (data) {
-		console.log(data)
-		console.log("secondConsoleLog", data.data.search.products[0].item.product_description.title)
-		console.log("secondConsoleLog", data.data.search.products[0].price.current_retail)
+		console.log(data);
+		console.log("secondConsoleLog", data.data.search.products[0].item.product_description.title);
+		console.log("secondConsoleLog", data.data.search.products[0].price.current_retail);
 
 		const listItem = document.createElement('li');
 		listItem.textContent = data.data.search.products[0].item.product_description.title;
@@ -31,10 +31,8 @@ fetch(url, options)
 		batteries.appendChild(listItem);
 		batteries.appendChild(listPrice);
 	})
-}
+};
 
-fetchButton.addEventListener('click', function ()
+fetchButton.addEventListener('click', function () {
 
-
-// for (let i = 0; i < data.length; i++) {
-//   }
+});
