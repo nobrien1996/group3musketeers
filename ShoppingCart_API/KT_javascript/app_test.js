@@ -5,20 +5,20 @@ let renderCartData = document.querySelector(".renderCartData");
 
 //get data from api
 
-//async function getData(){
-  //  const res = await fetch("https://fakestoreapi.com/products"); 
-    //const data = await res.json();
+async function getData(){
+    const res = await fetch("https://fakestoreapi.com/products"); 
+    const data = await res.json();
 
     //Target API item 1
-async function targetFetch1() {
-	const url = 'https://target1.p.rapidapi.com/products/v2/list?store_id=911&category=5xtg6&count=20&offset=0&default_purchasability_filter=true&sort_by=relevance';
-	const options = {
-		method: 'GET',
-		headers: {
-			'x-rapidapi-key': '163120faf3msh6af389338066b79p1f41f3jsn520223d6927d',
-			'x-rapidapi-host': 'target1.p.rapidapi.com'
-		}
-	};
+//function targetFetch1() {
+//	const url = 'https://target1.p.rapidapi.com/products/v2/list?store_id=911&category=5xtg6&count=20&offset=0&default_purchasability_filter=true&sort_by=relevance';
+//	const options = {
+//		method: 'GET',
+//		headers: {
+//			'x-rapidapi-key': '163120faf3msh6af389338066b79p1f41f3jsn520223d6927d',
+//			'x-rapidapi-host': 'target1.p.rapidapi.com'
+//		}
+//	};
 
 //Item 0 fetch
 /*	fetch(url, options)
