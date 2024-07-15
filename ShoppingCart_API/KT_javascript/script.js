@@ -11,6 +11,11 @@ const item2 = document.getElementById('item3');
 const item3 = document.getElementById('item4');
 
 
+targetFetch1()
+targetFetch2()
+targetFetch3()
+targetFetch4()
+
 //Target API item 1
 function targetFetch1() {
 	const url = 'https://target1.p.rapidapi.com/products/v2/list?store_id=911&category=5xtg6&count=20&offset=0&default_purchasability_filter=true&sort_by=relevance';
@@ -33,15 +38,23 @@ function targetFetch1() {
 			//Item 0
 			console.log("firstItemName", data.data.search.products[0].item.product_description.title);
 			console.log("firstItemPrice", data.data.search.products[0].price.current_retail);
+		//	console.log("firstItemImage", data.data.search.products[0].price.item.enrichment.images.primary_image_url);
 
 			const listItem0 = document.createElement('li');
 			listItem0.textContent = data.data.search.products[0].item.product_description.title;
 
 			const listPrice0 = document.createElement('li');
 			listPrice0.textContent = data.data.search.products[0].price.current_retail;
+
+			const listImage0 = document.createElement('img');
+			listImage0.setAttribute("src", data.data.search.products[0].item.enrichment.images.primary_image_url);
 			
+			//const listImg0 = document.createElement("img");
+			//listImg0.setAttribute("src", "https://target.scene7.com/is/image/Target/GUEST_52e68c7e-814d-4391-b742-a98ad09f9737");
+		
 			item0.appendChild(listItem0);
 			item0.appendChild(listPrice0);
+			item0.appendChild(listImage0);
 	});
 };
 
@@ -59,23 +72,33 @@ function targetFetch2() {
 //Item 1 fetch
 	fetch(url, options)
 			.then(function (response) {
+				console.log(response);
 				return response.json();
 			})
 			.then(function (data) {
 				console.log(data);
-
+			//for (let i=0; i<data.data.search.products.length; i++){
+			for (let i=0; i<5; i++){
+				
 		//Item 1
-		console.log("secondItemName", data.data.search.products[1].item.product_description.title);
-		console.log("secondItemPrice", data.data.search.products[1].price.current_retail);
-
+		console.log("secondItemName", data.data.search.products[i].item.product_description.title);
+		console.log("secondItemPrice", data.data.search.products[i].price.current_retail);
+		
 		const listItem1 = document.createElement('li');
-		listItem1.textContent = data.data.search.products[1].item.product_description.title;
+		listItem1.textContent = data.data.search.products[i].item.product_description.title;
 
 		const listPrice1 = document.createElement('li');
-		listPrice1.textContent = data.data.search.products[1].price.current_retail;
+		listPrice1.textContent = data.data.search.products[i].price.current_retail;
+
+		const listImage1 = document.createElement("img");
+		listImage1.setAttribute("src", data.data.search.products[i].item.enrichment.images.primary_image_url);
+			
+		//listImg1.setAttribute("src", "https://target.scene7.com/is/image/Target/GUEST_20effe8b-9387-4f13-ac1c-bcc1ecbadc56");
 		
 		item1.appendChild(listItem1);
 		item1.appendChild(listPrice1);
+		item1.appendChild(listImage1);
+			}
 	});
 };
 
@@ -146,3 +169,4 @@ function targetFetch4() {
 		item3.appendChild(listPrice3);
 	});
 };
+
