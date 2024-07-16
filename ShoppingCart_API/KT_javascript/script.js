@@ -147,7 +147,8 @@ function targetFetch4() {
 		}
 	};
 
-//Item 3 fetch
+/*
+Item 3 fetch
 	fetch(url, options)
 		.then(function (response) {
 			return response.json();
@@ -167,6 +168,6 @@ function targetFetch4() {
 		
 		item3.appendChild(listItem3);
 		item3.appendChild(listPrice3);
-	});
+	});*/
 };
 
