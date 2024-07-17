@@ -6,33 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Checkout Page Discoveryvip.com</title>
-    <link rel="stylesheet" href="./dist/output.css">    
-    <style background: slate -50px>
-        input[type="number"] {
-            width: 50px;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles/output.css">    
+    <style class="bg-gray-100"></style>
 </head>
 
 <body>
-    <div class="">
-        <h1>Shopping Checkout</h1>
+    <div class="p-4 border-2 border-gray-400 rounded bg-gray-50 font-serif">
+        <h1 class="self-center text-4xl font-semibold dark:text-white px-4 pb-4">Shopping Checkout</h1>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
             <input type="hidden" name="cmd" value="_cart">
             <input type="hidden" name="upload" value="1">
             <input type="hidden" name="business" value="seller@dezignerfotos.com">
-            <table class="">
-                <thead class="">
+            <table class="bg-gray-100">
+                <thead>
                     <tr>
-                        <th>Qty</th>
-                        <th>Item Name</th>
-                        <th>Cost</th>
-                        <th class="">Subtotal</th>
+                        <th class="border-2 border-gray-400 px-4 pb-4">Qty</th>
+                        <th class="border-2 border-gray-400 px-4 pb-4">Item Name</th>
+                        <th class="border-2 border-gray-400 px-4 pb-4">Cost</th>
+                        <th class="border-2 border-gray-400 px-4 pb-4">Subtotal</th>
                     </tr>
                 </thead>
                 <tbody id=""> </tbody>
             </table>
-            <input type="" class="" value="Checkout with PayPal"> <a href="products.html" class="">Continue Shopping</a> </form>
+            <br>
+            <div class="font-serif">
+                <input type="submit" class="px-2 border-2 border-gray-400 rounded bg-blue-50 font-mono" value="Checkout with PayPal">
+                <a href="products.html" class="px-4 border-2 border-gray-400 rounded bg-blue-50">Continue Shopping</a>
+            </div>
+        </form>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>

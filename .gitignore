@@ -3,3 +3,6 @@
 
 #MAC OS DIRECTORY FILE
 .DS_Store
+
+#NODE MODULES
+node_modules
