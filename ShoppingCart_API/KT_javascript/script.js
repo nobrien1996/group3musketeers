@@ -79,7 +79,7 @@ function targetFetch2() {
 				console.log(data);
 			//for (let i=0; i<data.data.search.products.length; i++){
 			for (let i=0; i<5; i++){
-				
+
 		//Item 1
 		console.log("secondItemName", data.data.search.products[i].item.product_description.title);
 		console.log("secondItemPrice", data.data.search.products[i].price.current_retail);
@@ -102,72 +102,4 @@ function targetFetch2() {
 	});
 };
 
-//Target API item 2
-function targetFetch3() {
-	const url = 'https://target1.p.rapidapi.com/products/v2/list?store_id=911&category=5xtg6&count=20&offset=0&default_purchasability_filter=true&sort_by=relevance';
-	const options = {
-		method: 'GET',
-		headers: {
-			'x-rapidapi-key': '163120faf3msh6af389338066b79p1f41f3jsn520223d6927d',
-			'x-rapidapi-host': 'target1.p.rapidapi.com'
-		}
-	};
-
-//Item 2 fetch
-	fetch(url, options)
-		.then(function (response) {
-			return response.json();
-		})
-		.then(function (data) {
-			console.log(data);
-
-		//Item 2
-		console.log("thirdItemName", data.data.search.products[2].item.product_description.title);
-		console.log("thirdItemPrice", data.data.search.products[2].price.current_retail);
-
-		const listItem2 = document.createElement('li');
-		listItem2.textContent = data.data.search.products[2].item.product_description.title;
-
-		const listPrice2 = document.createElement('li');
-		listPrice2.textContent = data.data.search.products[2].price.current_retail;
-		
-		item2.appendChild(listItem2);
-		item2.appendChild(listPrice2);
-	});
-};
-
-//Target API item 3
-function targetFetch4() {
-	const url = 'https://target1.p.rapidapi.com/products/v2/list?store_id=911&category=5xtg6&count=20&offset=0&default_purchasability_filter=true&sort_by=relevance';
-	const options = {
-		method: 'GET',
-		headers: {
-			'x-rapidapi-key': '163120faf3msh6af389338066b79p1f41f3jsn520223d6927d',
-			'x-rapidapi-host': 'target1.p.rapidapi.com'
-		}
-	};
-
-/*
-Item 3 fetch
-	fetch(url, options)
-		.then(function (response) {
-			return response.json();
-		})
-		.then(function (data) {
-			console.log(data);
-
-		//Item 3
-		console.log("fourthItemName", data.data.search.products[3].item.product_description.title);
-		console.log("fourthItemPrice", data.data.search.products[3].price.current_retail);
-
-		const listItem3 = document.createElement('li');
-		listItem3.textContent = data.data.search.products[3].item.product_description.title;
-
-		const listPrice3 = document.createElement('li');
-		listPrice3.textContent = data.data.search.products[3].price.current_retail;
-		
-		item3.appendChild(listItem3);
-		item3.appendChild(listPrice3);
-	});*/
-};
 
