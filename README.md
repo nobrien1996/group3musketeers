@@ -24,5 +24,15 @@
 * we did learn how to work as a team remotely and learn how to susscesfully pull clone and push into one shared Repo 
 
 ## Screenshot 
+ 
+ * ![alt text](<src/assets/Screenshot 2.png>)
 
-## Link 
+ * ![alt text](<src/assets/Screenshot 3 .png>)
+
+ * ![alt text](<src/assets/Screenshot 4.png>)
+
+ * ![alt text](<src/assets/Screenshot 1 .png>)
+
+ ## link 
+
+ * 
