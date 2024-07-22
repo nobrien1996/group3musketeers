@@ -11,59 +11,118 @@
 </head>
 
 <body>
-    <header class="dark:bg-gray-900 border-2 border-gray-400 bg-blue-500 rounded place px-4 flex-col relative font-serif">
-        <div class="flex">
+    <header class="border-2 border-gray-400 bg-blue-500 rounded place px-4 flex-col relative font-serif">
+        <div class="flex-auto">
             <div class="text-sm self-center text-left border-gray-300 bg-gray-100 rounded container-sm py-0.5 px-8 border-2 order-1">(items)</div>
             <br>
             <div class="px-1"> 
-                <span class="self-center text-4xl font-semibold dark:text-white px-8 border-2 border-gray-400 rounded bg-gray-100 container-md flex-col order-2" data-toggle="modal" data-target="#cart">Open Shopping Cart</span>
-                <span class="self-center text-4xl font-semibold dark:text-white px-8 border-2 border-gray-400 rounded bg-gray-100 container-md flex-col order-3"><a href="checkout.html">Proceed to checkout</a></span>
+                <span class="self-center text-4xl font-semibold px-8 border-2 border-gray-400 rounded bg-gray-100 container-md flex-col order-2" data-toggle="modal" data-target="#cart">Open Shopping Cart</span>
+                <span class="self-center text-4xl font-semibold px-8 border-2 border-gray-400 rounded bg-gray-100 container-md flex-col order-3"><a href="checkout.html">Proceed to checkout</a></span>
             </div>
             <div class="flex flex-wrap items-right justify-end mx-auto p-2">
                 <button type="submit" data-toggle="collapse" data-target="#nvbar"></button>
-                    <a class="self-center text-lg font-semibold dark:text-white px-8 border-2 border-gray-400 rounded bg-blue-50 order-4" href="index.html">Home</a>
-                    <a class="self-center text-lg font-semibold dark:text-white px-8 border-2 border-gray-400 rounded bg-blue-50 order-5" href="about.html">About</a>
-                    <a class="self-center text-lg font-semibold dark:text-white px-8 border-2 border-gray-400 rounded bg-blue-50 order-6" href="products.html">Products</a>
+                    <a class="self-center text-lg font-semibold px-8 border-2 border-gray-400 rounded bg-blue-50 order-4" href="index.html">Home</a>
+                    <a class="self-center text-lg font-semibold px-8 border-2 border-gray-400 rounded bg-blue-50 order-5" href="about.html">About</a>
+                    <a class="self-center text-lg font-semibold px-8 border-2 border-gray-400 rounded bg-blue-50 order-6" href="products.html">Products</a>
                 </div>
             </div>
         </div>
     </header>
-    <div class="p-4 border-2 border-gray-400 rounded flex-wrap flex-col relative">
-        <!-- content changes on each page -->
-        <div class="border-2 border-gray-400 rounded bg-gray-100 justify-start p-4 order-1">
-            <h3 class="text-lg order-2">Blue Jeans</h3>
-                <h6 class="text-base order-3">$60.00</h6> 
-                    <img src="./assets/blue jean.jpg" style="height:230px;" class="rounded">
-                            <!----  <h6 class="card-subtitle text-muted">$500.00</h6> <img src="http://placehold.it/350x150" class="img-fluid"> </div> -->
-                    <div>
-                        <p class="font-normal order-4">First jeans in the world ever made</p>
-                        <a href="#" class="border-2 border-gray-100 rounded bg-blue-100 order-5" data-name="iPhone" data-s="black" data-price="50000" data-id="1">Add to Cart</a>
-                    </div>
-        </div>
+
+    <div class="p-4 border border-gray-400 rounded flex">
+        <!-- <div class="p-4 border-2 border-gray-400 rounded"> -->
+            <!-- content changes on each page -->
+            <div class="border-2 border-gray-400 rounded bg-gray-100 justify-start p-4 w-4">
+                <div class="text-lg font-semibold">Blue Jeans</div>
+                <img src="./assets/blue jean.jpg" width="180px" class="rounded">
+                <!----  <h6 class="card-subtitle text-muted">$500.00</h6> <img src="http://placehold.it/350x150" class="img-fluid"> </div> -->
+                <ul>
+                    <li class="font-normal flex">First jeans in the world ever made</li>
+                    <li class="text-base italic">$60.00</li> 
+                    <li><a href="#" class="border-2 border-gray-200 rounded bg-blue-100 font-semibold" data-name="iPhone" data-s="black" data-price="50000" data-id="1">Add to Cart</a></li>
+                </ul>
+            </div>
         <br>
-        <div class="border-2 border-gray-400 rounded bg-gray-100 justify-start p-4 order-1">
-            <h3 class="text-lg order-2">Black Jeans</h3>
-                <h6 class="text-base order-3">$70.00</h6> 
-                    <img src="./assets/black jean.jpeg" style="height:230px;" class="rounded">
-                            <!----  <h6 class="card-subtitle text-muted">$500.00</h6> <img src="http://placehold.it/350x150" class="img-fluid"> </div> -->
-                    <div>
-                        <p class="font-normal order-4">First jeans in the world ever made but in black</p>
-                        <a href="#" class="border-2 border-gray-100 rounded bg-blue-100 order-5" data-name="iPhone" data-s="black" data-price="50000" data-id="1">Add to Cart</a>
-                    </div>
-        </div>
+            <div class="border-2 border-gray-400 rounded bg-gray-100 justify-start p-4 order-2">
+                <div class="text-lg font-semibold">Black Jeans</div>
+                <img src="./assets/black jean.jpeg" width="180px" class="rounded">
+                <!----  <h6 class="card-subtitle text-muted">$500.00</h6> <img src="http://placehold.it/350x150" class="img-fluid"> </div> -->
+                <ul>
+                    <li class="font-normal flex">First jeans in the world ever made but in black</li>
+                    <li class="text-base ">$70.00</li> 
+                    <li><a href="#" class="border-2 border-gray-200 rounded bg-blue-100 font-semibold" data-name="iPhone" data-s="black" data-price="50000" data-id="1">Add to Cart</a></li>
+                </ul>
+            </div>
         <br>
-        <div class="border-2 border-gray-400 rounded bg-gray-100 justify-start p-4 order-1">
-            <h3 class="text-lg order-2">Hoodie</h3>
-                <h6 class="text-base order-3">$85.00</h6> 
-                    <img src="./assets/hoodie.jpg" style="height:230px;" class="rounded">
-                                    <!----  <h6 class="card-subtitle text-muted">$500.00</h6> <img src="http://placehold.it/350x150" class="img-fluid"> </div> -->
-                    <div>
-                        <p class="font-normal order-4">Lightweight oversized cotton hoodie. Available in other colors, inquire via email</p>
-                        <a href="#" class="border-2 border-gray-100 rounded bg-blue-100 order-5" data-name="iPhone" data-s="black" data-price="50000" data-id="1">Add to Cart</a>
-                    </div>
-        </div>
+            <div class="border-2 border-gray-400 rounded bg-gray-100 justify-start p-4">
+                <div class="text-lg font-semibold">Hoodie</div>
+                <img src="./assets/hoodie.jpg" width="180px" class="rounded">
+                <!----  <h6 class="card-subtitle text-muted">$500.00</h6> <img src="http://placehold.it/350x150" class="img-fluid"> </div> -->
+                <ul>
+                    <li class="font-normal ">Lightweight oversized cotton hoodie. Available in other colors, inquire via email</li>
+                    <li class="text-base italic">$85.00</li> 
+                    <li><a href="#" class="border-2 border-gray-200 rounded bg-blue-100 font-semibold" data-name="iPhone" data-s="black" data-price="50000" data-id="1">Add to Cart</a></li>
+                </ul>
+            </div>
+        <br>
+            <div class="border-2 border-gray-400 rounded bg-gray-100 justify-start p-4 order-4">
+                <div class="text-lg font-semibold">Sweatshirt</div>
+                <img src="./assets/grey hoodie.jpg" width="180px" class="rounded">
+                <!----  <h6 class="card-subtitle text-muted">$500.00</h6> <img src="http://placehold.it/350x150" class="img-fluid"> </div> -->
+                <ul>
+                    <li class="font-normal">Comfortable cotton hoodie. Available in other colors, inquire via email</li>
+                    <li class="text-base italic">$85.00</li> 
+                    <li><a href="#" class="border-2 border-gray-200 rounded bg-blue-100 font-semibold" data-name="iPhone" data-s="black" data-price="50000" data-id="1">Add to Cart</a></li>
+                </ul>
+            </div>
+        <br>
+            <div class="border-2 border-gray-400 rounded bg-gray-100 justify-start p-4 order-5">
+                <div class="text-lg font-semibold">Blue Shirt</div>
+                <img src="./assets/blue shirt.jpg" width="180px" class="rounded">
+                <!----  <h6 class="card-subtitle text-muted">$500.00</h6> <img src="http://placehold.it/350x150" class="img-fluid"> </div> -->
+                <ul>
+                    <li class="font-normal">As comfortable as it gets</li>
+                    <li class="text-base italic">$25.00</li> 
+                    <li><a href="#" class="border-2 border-gray-200 rounded bg-blue-100 font-semibold" data-name="iPhone" data-s="black" data-price="50000" data-id="1">Add to Cart</a></li>
+                </ul>
+            </div>
+        <br>
+            <div class="border-2 border-gray-400 rounded bg-gray-100 justify-start p-4 order-6">
+                <div class="text-lg font-semibold">Grey Shirt</div>
+                <img src="./assets/grey shirt.jpg" width="180px" class="rounded">
+                <!----  <h6 class="card-subtitle text-muted">$500.00</h6> <img src="http://placehold.it/350x150" class="img-fluid"> </div> -->
+                <ul>
+                    <li class="font-normal">As comfortable as it gets in grey</li>
+                    <p class="text-base italic">$25.00</p> 
+                    <li><a href="#" class="border-2 border-gray-200 rounded bg-blue-100 font-semibold" data-name="iPhone" data-s="black" data-price="50000" data-id="1">Add to Cart</a></li>
+                </ul>
+            </div>
+        <br>
+            <div class="border-2 border-gray-400 rounded bg-gray-100 justify-start p-4 order-7">
+                <div class="text-lg font-semibold">Shorts</div>
+                <img src="./assets/grey shorts.jpg" width="180px" class="rounded">
+                <!----  <h6 class="card-subtitle text-muted">$500.00</h6> <img src="http://placehold.it/350x150" class="img-fluid"> </div> -->
+                <ul>
+                    <li class="font-normal">Good for all weather</li>
+                    <li class="text-base italic">$30.00</li> 
+                    <li><a href="#" class="border-2 border-gray-200 rounded bg-blue-100 font-semibold" data-name="iPhone" data-s="black" data-price="50000" data-id="1">Add to Cart</a></li>
+                </ul>
+            </div>
+        <br>
+            <div class="border-2 border-gray-400 rounded bg-gray-100 justify-start p-4 order-8">
+                <div class="text-lg font-semibold">Women's Shorts</div>
+                <img src="./assets/women's shorts.jpg" width="180px" class="rounded">
+                <!----  <h6 class="card-subtitle text-muted">$500.00</h6> <img src="http://placehold.it/350x150" class="img-fluid"> </div> -->
+                <ul>
+                    <li class="font-normal">For your everyday workout</li>
+                    <li class="text-base italic">$25.00</li> 
+                    <li><a href="#" class="border-2 border-gray-200 rounded bg-blue-100 font-semibold" data-name="iPhone" data-s="black" data-price="50000" data-id="1">Add to Cart</a></li>
+                </ul>
+            </div>
+        <!-- </div> -->
     </div>
-    <br>
+
+    <!-- FOOTER-->
     <div class="dark:bg-gray-900 border-2 border-gray-400 rounded">
         <footer class="border-t-2 border-gray-400 bg-gray-100">
             <div class="">
