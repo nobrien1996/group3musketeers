@@ -835,3 +835,19 @@ video {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 }
+
+.navBar_items_tag {
+  font-size: small;
+  text-align: left;
+  font-style: italic;
+  font-weight: 600;
+  border-color: #d1d5db;
+  background-color: #f3f4f6;
+  border-width: 2px;
+  border-radius: 0.25rem;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-right: 32px;
+  padding-left: 32px;
+  max-width: 108px;
+}
