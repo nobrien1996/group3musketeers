@@ -31,7 +31,7 @@
 
 * ![shop 2 page ](<src/assets/Screenshot 32.png>)
 
-* ![checkout page ](<src/assets/Screenshot 4.png>)
+* ![Checkout page](<src/assets/Screenshot 34.png>)
 
 ## Technologies used
 
@@ -44,4 +44,6 @@
 
 ## link 
 
+ * REPO : https://github.com/nobrien1996/group3musketeers.git
 
+ * APP : https://nobrien1996.github.io/group3musketeers/
