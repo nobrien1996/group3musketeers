@@ -24,15 +24,26 @@
 * we did learn how to work as a team remotely and learn how to susscesfully pull clone and push into one shared Repo 
 
 ## Screenshot 
- 
- * ![alt text](<src/assets/Screenshot 2.png>)
 
- * ![alt text](<src/assets/Screenshot 3 .png>)
+* ![home page](<src/assets/Screenshot 1.png>)
 
- * ![alt text](<src/assets/Screenshot 4.png>)
+* ![shop page](<src/assets/Screenshot 2.png>)
 
- * ![alt text](<src/assets/Screenshot 1 .png>)
+* ![shop 2 page ](<src/assets/Screenshot 32.png>)
 
- ## link 
+* ![Checkout page](<src/assets/Screenshot 34.png>)
 
- * 
+## Technologies used
+
+* Tailwind 
+
+* HTML , CSS 
+
+* Target API
+
+
+## link 
+
+ * REPO : https://github.com/nobrien1996/group3musketeers.git
+
+ * APP : https://nobrien1996.github.io/group3musketeers/
