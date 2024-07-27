@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./styles/output.css">
+    <style class="bg-gray-50"></style>
+</head>
+<body>
+    <header class="dark:bg-gray-900 border-2 border-gray-400 bg-blue-500 rounded place px-4 flex-col relative font-serif">
+        <div class="flex">
+          <!---- <div class="text-sm self-center text-left border-gray-300 bg-gray-100 rounded container-sm py-0.5 px-8 border-2 order-1">(items)</div> -->
+            <br>
+          <div class="px-1">
+            <ul class ="nav navbar-nav float-sm-left">
+                <span class="self-center text-4xl font-semibold dark:text-white px-8 border-2 border-gray-400 rounded bg-gray-100 order-1" data-toggle="modal" data-target="#cart">Shopping Cart</span>
+                <span class="self-center text-4xl font-semibold dark:text-white px-8 border-2 border-gray-400 rounded bg-gray-100 container-md flex-col order-2"><a href="checkout.html">Proceed to checkout</a></span>
+            </ul>
+           </div>
+          <div class="container">
+            <nav class="navbar navbar-full navbar-dark bg-inverse"></nav>
+            <div class="flex flex-wrap items-right justify-end mx-auto p-2">
+                <button type="submit" data-toggle="collapse" data-target="#nvbar"></button>
+                <div id ="nvbar" class=""collapse navbar-toggleable-xs">
+                    <ul class ="nav navbar-nav float-sm-left">
+                <!---    <span class="self-center text-lg font-semibold dark:text-white px-8 border-2 border-gray-400 rounded bg-blue-50 order-4"><a href="index.html">Home</a></span> -->
+                    <span class="self-center text-lg font-semibold dark:text-white px-8 border-2 border-gray-400 rounded bg-blue-50 order-5"><a href="about.html">About</a></span>
+                    <span class="self-center text-lg font-semibold dark:text-white px-8 border-2 border-gray-400 rounded bg-blue-50 order-6"><a href="products.html">Products</a></span>
+                    </ul>
+                </div>
+              </nav>
+            </div>
+        </div>
+    </header>
+    <div class="p-4 border-2 border-gray-400 rounded">
+        <!-- content changes on each page -->
+        <div id="" class="order-7" data-ride="carousel">
+            <ol class="order-8">
+                <li data-target="#car" data-slide-to="0"></li>
+                <li data-target="#car" data-slide-to="1"></li>
+                <li data-target="#car" data-slide-to="2"></li>
+            </ol>
+            <divrole="listbox">
+                <div class="border-2 border-gray-200 rounded order-9"><img src="./assets/LeatherJacket.jpg" style="height:1000px; width: 1250px" class="rounded">
+                    <div>></div>
+                <br>
+                <div class="border-2 border-gray-200 rounded order-10"><img src="./assets/blue jean.jpg" style="height:1000px; width: 1250px" class="rounded">
+                    <div>></div></div>
+                <br>
+                <div class="border-2 border-gray-200 rounded order-11"><img src="./assets/WinterCoat.jpg" style="height:1000px; width: 1250px" class="rounded"></div>
+            </div>
+            <div>
+                <a class="order-12" href="#car" role="button" data-slide="prev"><span class=""></span></a>
+                <a class="order-13" href="#car" role="button" data-slide="next"><span class=""></span></a> 
+            </div>
+          <!----  <div class=""carousel-inner" role="listbox">
+                <div class="carousel-item active"><img src="./assets/LeatherJacket.jpg" style="height:1000px; width: 1250px" class="rounded"></div>
+                <div class="carousel-item active"><img src="./assets/black jean.jpeg" style="height:1000px; width: 1250px" class="rounded"></div>
+                <div class="carousel-item active"><img src="./assets/WinterCoat.jpg" style="height:1000px; width: 1250px" class="rounded"></div>
+            </div>
+            <div>
+                <a class="left carousel-control" href="#car" role="button" data-slide="prev"><span class = "icon prev"></span></a>
+                <a class="right carousel-control" href="#car" role = "button" data-slide="next"><span class="icon next"></span></a></div>
+            </div>--->
+        </div>
+        <br>
+        <div class="p-4 border-2 border-gray-400 rounded bg-gray-100">
+            <div class="p-2 border-2 border-gray-400 rounded bg-gray-50 order-14">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+                <p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+                <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,</p>
+            </div>
+            <br>
+            <div class="p-2 border-2 border-gray-400 rounded bg-gray-50 order-15">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla consequat massa quis enim.</p>
+                <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, . Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+                <p>Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,</p>
+            </div>
+        </div>
+        <br>
+        <div class="p-4 border-2 border-gray-400 rounded bg-gray-100">
+            <div class="flex-col font-medium border-2 border-gray-400 rounded bg-gray-50 p-3 order-16 font-serif">
+                <h3 class="text-lg order-17">Blue Jeans</h3>
+                <h6 class="text-base order-18">$60.00</h6> <img src="./assets/blue jean.jpg" style="height:230px;" class="rounded">
+                <div>
+                    <p class="font-normal order-19">First jeans in the world ever made</p>
+                    <a href="#" class="border-2 border-gray-100 rounded bg-blue-100 order-20" data-name="SD Card" data-s="4GB" data-price="1000" data-id="6">Add to Cart</a>
+                </div>
+            </div>
+            <br>
+            <div class="flex-col font-medium border-2 border-gray-400 rounded bg-gray-50 p-3 order-21 font-serif">
+                <h3 class="text-lg order-22">Black Jeans</h3>
+                <h6 class="text-base order-23">$70.00</h6> <img src="./assets/black jean.jpeg" style="height:230px;"  class="rounded">
+                <div>
+                    <p class="font-normal order-24">First jeans in the world ever made but in black</p>
+                    <a href="#" class="border-2 border-gray-100 rounded bg-blue-100 order-25" data-name="Cable" data-s="4" data-price="1600" data-id="7">Add to Cart</a>
+                </div>
+            </div>
+            <br>
+            <div class="flex-col font-medium border-2 border-gray-400 rounded bg-gray-50 p-3 order-26 font-serif">
+                <h3 class="text-lg order-27">Hoodie</h3>
+                <h6 class="text-base order-28">$85.00</h6> <img src="./assets/hoodie.jpg" style="height:230px;" class="rounded">
+                <div>
+                    <p class="font-normal order-29">Lightweight oversized cotton hoodie. Available in other colors, inquire via email.</p> 
+                    <a href="#" class="border-2 border-gray-100 rounded bg-blue-100 order-30" data-name="Cable" data-s="1" data-price="300" data-id="8">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dark:bg-gray-900 border-2 border-gray-400 rounded">
+        <footer class="border-t-2 border-gray-400 bg-gray-100">
+            <div class="">
+                <p class="px-4 py-1 italic font-medium font-mono">© Copyright group3musketeers </p>
+            </div>
+        </footer>
+        <!-- Modals -->
+        <div class="bg-blue-500 py-1 font-serif px-4" tabindex="-1">
+            <div class="">
+                <button type="submit" class="border-2 border-gray-400 rounded bg-blue-50" data-dismiss="modal">×</button>
+                <h4 class="font-medium bg-gray-100 border-2 border-gray-400">Shopping Cart:</h4>
+            </div>
+            <div class="py-2">
+                <table class="">
+                    <thead class="bg-gray-100">
+                        <tr>
+                            <th class="border-2 border-gray-400 px-2 bg-gray-50">Qty:</th>
+                            <th class="border-2 border-gray-400 px-2 bg-gray-50">Item Name:</th>
+                            <th class="border-2 border-gray-400 px-2 bg-gray-50">Cost:</th>
+                            <th class="border-2 border-gray-400 px-2 bg-gray-50">Subtotal:</th>
+                        </tr>
+                    </thead>
+                    <tbody id=""> </tbody>
+                </table>
+            </div>
+            <div class="pb-2">
+                <button type="submit" data-dismiss="modal"></button>
+                    <a href="index.html" class="self-center font-semibold dark:text-white px-4 border-2 border-gray-400 rounded bg-blue-50">Continue shopping</a>
+                    <a href="checkout.html" class="self-center font-semibold dark:text-white px-4 border-2 border-gray-400 rounded bg-blue-50">Proceed to checkout</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
